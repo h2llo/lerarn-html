@@ -3,4 +3,39 @@ div#header-center {
   margin: 0 auto;
   width: 1080px;
 }
+/* 사실 div는 하도 많이 써서 css할 때 앞에 div를 생략 할 수 있다. */
+#header-search > a h1 {
+  width: 222px;
+  height: 52px;
+  display: inline-block;
+  background-image: url(./003.png);
+  background-position: 0;
+  background-size: 200px 68px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+ 
+}
+#header-search a {
+  text-decoration: none;
+}
+#header-search > a span {
+  display: none;
+}
 
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+#header-search fieldset {
+  width: 521px;
+  height: 49px;
+  margin-left: 20px;
+  padding: 12px 0 12px 12px;
+  display: inline-block;
+  border: 2px solid #03cf5d;
+}
