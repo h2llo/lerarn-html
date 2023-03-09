@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 /*선택자*/
 div#header-center {
   margin: 0 auto;
@@ -5,12 +9,13 @@ div#header-center {
 }
 /* 사실 div는 하도 많이 써서 css할 때 앞에 div를 생략 할 수 있다. */
 #header-search > a h1 {
+  vertical-align: middle;
   width: 222px;
-  height: 52px;
+  height: 70px;
   display: inline-block;
   background-image: url(./003.png);
   background-position: 0;
-  background-size: 200px 68px;
+  background-size: 200px 72px;
   background-repeat: no-repeat;
   vertical-align: middle;
  
@@ -32,10 +37,33 @@ div#header-center {
 }
 
 #header-search fieldset {
+  vertical-align: -webkit-baseline-middle;
   width: 521px;
-  height: 49px;
-  margin-left: 20px;
+  height: 44px;
   padding: 12px 0 12px 12px;
+  margin-left: 20px;
   display: inline-block;
   border: 2px solid #03cf5d;
+  position: relative;
 }
+
+#header-search fieldset input{
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align: top;
+  width: 405px;
+  height: 23px;
+}
+#header-search fieldset button{
+  width: 49px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  background-color: #03cf5d;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+
+}
+
